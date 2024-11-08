@@ -1,0 +1,149 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --cor-primaria: #586F7C;
+    --cor-secundaria: #B8DBD9;
+    --cor-terciaria: #04724D;
+    --cor-bg: #f4f4f9;
+}
+
+/* Configuração base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-bg);
+}
+
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 100px;
+}
+
+nav{
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.drop-list{
+    display: none;
+}
+.dropdown:hover ul
+{
+    display: block;
+}
+
+/* Conteúdo principal */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos para o carrossel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 300px; /* Ajuste conforme necessário */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.carousel a {
+    display: none; /* Esconde todos os links inicialmente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+/*Formatação dos Catalogos*/
+
+.diversos-imagem-classe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* espaço entre as imagens */
+}
+
+.diversos-imagem-classe > div {
+    flex: 1 1 22%; /* tamanho de cada item para ocupar aproximadamente 1/4 do espaço */
+    text-align: center;
+}
+
+.mesas-imagem-classe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* espaço entre as imagens */
+}
+
+.mesas-imagem-classe > div {
+    flex: 1 1 30%; 
+    text-align: center;
+}
+
+.cadeira-imagem-classe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* espaço entre as imagens */
+}
+
+.cadeira-imagem-classe > div {
+    flex: 1 1 30%;
+    text-align: center;
+}
